@@ -124,9 +124,9 @@
   box-shadow: 2px 2px 2px 0 black;
 }
 .footer {
-  background-color: #e5e5e5;
+  //background-color: #e5e5e5;
   text-align: center;
-  //height: 50px;
+  bottom: 0;
   margin-top: 200px;
 }
 
