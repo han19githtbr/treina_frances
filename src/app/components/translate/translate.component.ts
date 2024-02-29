@@ -10,6 +10,7 @@ export class TranslateComponent {
   word: string = '';
   language: string = 'fr';
   speakingSpeed: number = 1; // Velocidade padrão de fala
+  spokenWord: string = '';
 
   constructor(private translationService: TranslationService) { }
 
@@ -19,6 +20,7 @@ export class TranslateComponent {
 
   speakDescription(description: string): void {
     this.translationService.speakWord(description, this.language, this.speakingSpeed);
+    this.spokenWord = description; // Atualiza a palavra falada
   }
 
   onSpeedChange(event: any): void {

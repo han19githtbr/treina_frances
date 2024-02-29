@@ -1,7 +1,9 @@
 <div class="img-container">
   <img src="../../../assets/logo_frances.png" alt="logo_frances_ht" />
 </div>
+
 <h2 class="title">Treine a sua pronunciação em Francês</h2>
+
 <div class="speed-control">
   <label for="speakingSpeed">Velocidade de fala:</label>
   <input type="range" id="speakingSpeed" name="speakingSpeed" min="0.5" max="2" step="0.1" [(ngModel)]="speakingSpeed" (change)="onSpeedChange($event)">
@@ -12,7 +14,6 @@
   <div class="input_container">
     <input type="text" [(ngModel)]="word" placeholder="Digite uma palavra ou uma frase em francês">
   </div>
-
 
   <h4 class="meu_idioma"> Idioma <span class="arrow">---</span></h4>
   <div class="select">
@@ -32,20 +33,28 @@
 
   <div class="card" (click)="onImageClick('Courir')">
     <img src="../../../assets/correr.jpg" alt="Courir">
+    <div class="spoken-word" *ngIf="spokenWord === 'Courir'">{{ spokenWord }}</div>
     <button class="listen-button" (click)="speakDescription('Courir')">Escute</button>
   </div>
+
   <div class="card" (click)="onImageClick('Marcher')">
     <img src="../../../assets/caminhar.jpg" alt="Caminhar">
+    <div class="spoken-word" *ngIf="spokenWord === 'Marcher'">{{ spokenWord }}</div>
     <button class="listen-button" (click)="speakDescription('Marcher')">Escute</button>
   </div>
+
   <div class="card" (click)="onImageClick('Cuisiner')">
     <img src="../../../assets/cozinhar.jpg" alt="Cozinhar">
+    <div class="spoken-word" *ngIf="spokenWord === 'Cuisiner'">{{ spokenWord }}</div>
     <button class="listen-button" (click)="speakDescription('Cuisiner')">Escute</button>
   </div>
+
   <div class="card" (click)="onImageClick('Piloter')">
     <img src="../../../assets/dirigir.jpg" alt="Dirigir">
+    <div class="spoken-word" *ngIf="spokenWord === 'Piloter'">{{ spokenWord }}</div>
     <button class="listen-button" (click)="speakDescription('Piloter')">Escute</button>
   </div>
+
 </div>
 <div class="footer">
   <strong>Copyright &copy; 2024 <a href="">Francês com três nativos</a>.</strong>
