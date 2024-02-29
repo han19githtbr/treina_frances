@@ -8,7 +8,7 @@ import { TranslationService } from '../../service/translation.service';
 })
 export class TranslateComponent {
   word: string = '';
-  language: string = 'en';
+  language: string = 'fr';
   speakingSpeed: number = 1; // Velocidade padrão de fala
 
   constructor(private translationService: TranslationService) { }
@@ -28,6 +28,4 @@ export class TranslateComponent {
   onImageClick(description: string): void {
     this.speakDescription(description);
   }
-
-
 }

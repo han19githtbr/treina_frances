@@ -32,6 +32,10 @@
   margin-left: 5%;
 }
 
+.arrow {
+  margin-top: 300px;
+}
+
 .translate-container input[type="text"],
 .translate-container select {
   flex: 1; /* Ocupa todo o espaço disponível */
