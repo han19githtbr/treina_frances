@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 *{
   background-color: #eaf5fd;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: 'Times New Roman';
+  font-weight: bold;
+  margin: 0;
 }
