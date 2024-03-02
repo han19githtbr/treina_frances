@@ -64,6 +64,10 @@
   gap: 20px;
   cursor: pointer;
   margin-bottom: 50px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 24px;
 }
 
 .card {
