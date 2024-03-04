@@ -1,5 +1,6 @@
 .testar_fala {
   text-align: center;
+  box-shadow: 1px 1px 1px 2px black;
 }
 
 .new-note-card {
@@ -19,6 +20,8 @@ button {
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 1px 1px 1px 2px black;
+  margin: 5px;
 }
 
 button:hover {
@@ -54,12 +57,12 @@ textarea:focus {
   align-items: center;
 }
 
-button {
+/*button {
   margin: 5px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-}
+}*/
 
 textarea {
   width: 100%;
@@ -92,6 +95,7 @@ button.recording {
   background-color: lightblue;
   padding: 5px 10px;
   border-radius: 5px;
+  box-shadow: 1px 1px 1px 2px black;
 }
 
 #timer.timer-finished {
@@ -126,7 +130,7 @@ button.recording {
 
 .language-select-container {
   position: fixed;
-  top: 110px;
+  top: 150px;
   right: 10px;
 }
 

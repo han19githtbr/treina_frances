@@ -1,5 +1,6 @@
 <h1 class="testar_fala">Teste a sua fala</h1>
 <div class="new-note-card">
+  <i class="fa-thin fa-microphone"></i>
   <button (click)="toggleRecording()" [ngClass]="{ 'recording': isRecording }">{{ isRecording ? 'Parar Gravação' : 'Iniciar Gravação' }}</button>
   <button (click)="clearContent()">Limpar Conteúdo</button>
   <div id="timer">{{ formatTime(timerValue) }}</div>
