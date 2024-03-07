@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+//import { DialogoComponent } from './components/pages/dialogo/dialogo.component';
+
 
 @NgModule({
   declarations: [

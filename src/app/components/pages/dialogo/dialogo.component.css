@@ -1,0 +1,57 @@
+/*.image-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  cursor: pointer;
+  margin-bottom: 50px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.card {
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px black;
+}
+
+.card img:hover {
+  transform: scale(1.07);
+}
+
+.clique_ouça {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.spoken-word {
+  position: absolute;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  left: 0;
+}
+
+.listen-button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 0 black;
+}*/
