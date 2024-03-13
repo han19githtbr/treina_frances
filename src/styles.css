@@ -1,10 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 *{
-  background-color: #d9d9ff;
+  background-color: #0e0e0e;
   list-style: none;
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: 'Times New Roman';
   font-weight: bold;
   margin: 0;
+}
+
+.container_consultation {
+  text-align: center;
+
+  top: 0;
+}
+
+.container_consultation > img {
+  margin-top: -3rem;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.icone_consultation {
+  background-color: none;
 }

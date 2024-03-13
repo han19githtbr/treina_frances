@@ -6,6 +6,7 @@
 .title {
   margin-top: -5rem;
   text-align: center;
+  color: #399cff;
 }
 
 .input_container {
@@ -91,6 +92,7 @@
 .clique_ouça {
   text-align: center;
   margin-top: 150px;
+  color: #ff0000;
 }
 
 .speed-control {
@@ -102,6 +104,7 @@
 
 .speed-control label {
   margin-right: 10px;
+  color: #006ad5;
 }
 
 .spoken-word {
