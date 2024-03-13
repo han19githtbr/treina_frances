@@ -5,13 +5,13 @@
   text-decoration: none;
   color: white;
   font-family: 'Times New Roman';
-  font-weight: bold;
+  //font-weight: bold;
   margin: 0;
 }
 
 .container_consultation {
   text-align: center;
-
+  background: none;
   top: 0;
 }
 
@@ -19,8 +19,6 @@
   margin-top: -3rem;
   width: 120px;
   border-radius: 50%;
+  border: 3px solid blue;
 }
 
-.icone_consultation {
-  background-color: none;
-}

@@ -9,6 +9,10 @@
   color: #399cff;
 }
 
+.title span {
+  color: #ff0000;
+}
+
 .input_container {
   border-radius: 4px;
   width: 100%;
@@ -93,6 +97,10 @@
   text-align: center;
   margin-top: 150px;
   color: #ff0000;
+}
+
+.clique_ouça span {
+  color: #0080ff;
 }
 
 .speed-control {
