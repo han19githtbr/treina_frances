@@ -1,31 +1,34 @@
 <nav class="nav-header-container">
   <ul class="nav-header-links">
     <li class="nav-header-itens">
-      <a [routerLink]="['/']">
+      <a [routerLink]="['/']" (mouseover)="showLabel('home')">
         <img
           class="icone_home"
           src="../../../../assets/img/casa.gif"
           alt="home"
         />
       </a>
+      <div class="icon-label" *ngIf="showHomeLabel">Home</div>
     </li>
     <li class="nav-header-itens">
-      <a [routerLink]="['/translate']" routerLinkActive="active">
+      <a [routerLink]="['/translate']" routerLinkActive="active" (mouseover)="showLabel('ouvir')">
         <img
           class="icone_orelha"
           src="../../../../assets/img/orelha.gif"
           alt="orelha"
         />
       </a>
+      <div class="icon-label" *ngIf="showOuvirLabel">Ouvir</div>
     </li>
     <li class="nav-header-itens">
-      <a [routerLink]="['/new-note-card']" routerLinkActive="active">
+      <a [routerLink]="['/new-note-card']" routerLinkActive="active" (mouseover)="showLabel('falar')">
         <img
           class="icone_falar"
           src="../../../../assets/img/microfone_2.gif"
           alt="falar"
         />
       </a>
+      <div class="icon-label" *ngIf="showFalarLabel">Falar</div>
       <i class="fa-solid fa-microphone"></i>
     </li>
     <!--<li class="nav-header-itens">

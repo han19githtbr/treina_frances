@@ -35,6 +35,13 @@
   border-radius: 50%;
 }
 
+.icon-label {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 12px;
+  color: white;
+}
+
 .nav-header-itens a {
   //color: blue;
 }
