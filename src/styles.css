@@ -22,3 +22,10 @@
   border-radius: 50%;
   border: 3px solid blue;
 }
+
+@media screen and (max-width: 1200px) {
+  .container_gravar > img {
+    width: 110px;
+    border-radius: 50%;
+  }
+}
