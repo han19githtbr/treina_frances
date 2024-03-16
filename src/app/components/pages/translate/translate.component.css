@@ -1,3 +1,13 @@
+.container_ouco {
+  text-align: center;
+}
+
+.container_ouco > img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
 .img-container {
   margin-top: -2rem;
   text-align: center;

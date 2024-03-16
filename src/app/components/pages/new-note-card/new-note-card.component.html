@@ -1,4 +1,11 @@
 <h1 class="testar_fala">Teste a sua fala</h1>
+<div class="container_gravar">
+  <img
+    class="icone_gravar"
+    src="../../../../assets/img/microfone.gif"
+    alt="gravar"
+  />
+</div>
 <div class="new-note-card">
   <i class="fa-thin fa-microphone"></i>
   <button (click)="toggleRecording()" [ngClass]="{ 'recording': isRecording }">{{ isRecording ? 'Parar Gravação' : 'Iniciar Gravação' }}</button>

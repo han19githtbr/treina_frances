@@ -17,6 +17,24 @@
   margin-right: 15px;
 }
 
+.icone_falar {
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.icone_home {
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.icone_orelha {
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+}
+
 .nav-header-itens a {
   //color: blue;
 }
