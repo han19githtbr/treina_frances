@@ -1,8 +1,6 @@
 .nav-header-container {
   width: 100%;
-  //background-color: #3b3b3b;
-  //height: 50px;
-  //margin-top: 0 auto;
+  border: 2px solid black;
 }
 
 .nav-header-links {
@@ -38,12 +36,9 @@
 .icon-label {
   text-align: center;
   margin-top: 5px;
-  font-size: 12px;
-  color: white;
-}
-
-.nav-header-itens a {
-  //color: blue;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
 }
 
 .nav-header-itens a:hover {
@@ -65,6 +60,3 @@
     justify-content: center;
   }
 }
-
-
-
