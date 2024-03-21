@@ -63,6 +63,31 @@
     <!--<button class="listen-button" (mouseover)="speakDescription('Piloter')">Escute</button>-->
   </div>
 
+  <div class="card" id="Nature" (mouseover)="onImageClick('La nature')" [ngClass]="{ 'blink': imageFound && spokenWord === 'Nature' }">
+    <img src="../../../assets/img/jour.jpg" alt="Jour">
+    <div class="spoken-word" *ngIf="spokenWord === 'La nature'">{{ spokenWord }}</div>
+    <!--<button class="listen-button" (mouseover)="speakDescription('Piloter')">Escute</button>-->
+  </div>
+
+  <div class="card" id="Soleil" (mouseover)="onImageClick('Le coucher du soleil')" [ngClass]="{ 'blink': imageFound && spokenWord === 'Soleil' }">
+    <img src="../../../assets/img/coucher.jpg" alt="Coucher">
+    <div class="spoken-word" *ngIf="spokenWord === 'Le coucher du soleil'">{{ spokenWord }}</div>
+    <!--<button class="listen-button" (mouseover)="speakDescription('Piloter')">Escute</button>-->
+  </div>
+
+  <div class="card" id="Maison" (mouseover)="onImageClick('Une maison')" [ngClass]="{ 'blink': imageFound && spokenWord === 'Maison' }">
+    <img src="../../../assets/img/maison.jpg" alt="Maison">
+    <div class="spoken-word" *ngIf="spokenWord === 'Une maison'">{{ spokenWord }}</div>
+    <!--<button class="listen-button" (mouseover)="speakDescription('Piloter')">Escute</button>-->
+  </div>
+
+  <div class="card" id="Plante" (mouseover)="onImageClick('Une plante')" [ngClass]="{ 'blink': imageFound && spokenWord === 'Plante' }">
+    <img src="../../../assets/img/natureza.jpg" alt="Plante">
+    <div class="spoken-word" *ngIf="spokenWord === 'Une plante'">{{ spokenWord }}</div>
+    <!--<button class="listen-button" (mouseover)="speakDescription('Piloter')">Escute</button>-->
+  </div>
+
+
 </div>
 <!--<div class="footer">
   <strong>Copyright &copy; 2024 <a href="">Francês com três nativos</a>.</strong>
