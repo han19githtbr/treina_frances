@@ -12,7 +12,8 @@
   <button (click)="clearContent()">Limpar Conteúdo</button>
   <div id="timer">{{ formatTime(timerValue) }}</div>
   <textarea class="gravou" [(ngModel)]="content" placeholder="A nota que você gravou aparece aqui"></textarea>
-  <button (click)="saveContent()">Salvar</button>
+  <button (click)="saveContent()">Salvar Texto</button>
+  
   <div *ngIf="savedContents.length > 0" class="saved-content">
     <h3>Conteúdo Salvo:</h3>
     <div *ngFor="let savedContent of savedContents" class="saved-item">
@@ -20,6 +21,7 @@
       <button class="delete-button" (click)="deleteContent(savedContent)">Apagar</button>
     </div>
   </div>
+
   <div class="language-select-container">
     <h4 class="escolher_idioma">Escolhe um idioma</h4>
     <select class="select-container" [(ngModel)]="selectedLanguage">

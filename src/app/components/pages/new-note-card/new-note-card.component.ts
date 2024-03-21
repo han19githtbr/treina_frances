@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-new-note-card',
   templateUrl: './new-note-card.component.html',
   styleUrls: ['./new-note-card.component.css']
 })
-export class NewNoteCardComponent {
+export class NewNoteCardComponent implements OnInit {
   isRecording: boolean = false;
   content: string = '';
   timerValue: number = 120; // 2 minutos em segundos
@@ -13,6 +13,15 @@ export class NewNoteCardComponent {
   recognition: any; // Referência ao reconhecimento de fala
   savedContents: string[] = []; // Array para armazenar o conteúdo salvo
   selectedLanguage: string = 'fr-FR'; // Idioma padrão para gravação
+
+
+  ngOnInit() {
+    const savedContents = localStorage.getItem('savedContents');
+
+    if (savedContents) {
+      this.savedContents = JSON.parse(savedContents);
+    }
+  }
 
   toggleRecording() {
     if (!this.isRecording) {
@@ -94,12 +103,16 @@ export class NewNoteCardComponent {
     }, 1000); // Atualizar a cada segundo
   }
 
+
   saveContent() {
     if (this.content.trim() !== '') {
       this.savedContents.push(this.content.trim());
       this.content = '';
+
+      localStorage.setItem('savedContents', JSON.stringify(this.savedContents));
     }
   }
+
 
   deleteContent(content: string) {
     const index = this.savedContents.indexOf(content);
